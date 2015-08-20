@@ -1,0 +1,9 @@
+This is a test project to reproduce a bug in some WSDL to PHP code generators where
+method signatures like 
+
+    public int order(order order) {
+    ...
+    }
+
+cause the generated parameter class "order" to overwrite the generated struct
+class "order".
