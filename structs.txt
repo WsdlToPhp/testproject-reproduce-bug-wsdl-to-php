@@ -1,0 +1,24 @@
+Array
+(
+    [0] => struct order {
+ string orderClassMember;
+}
+    [1] => struct offer {
+ string offerClassMember;
+}
+    [2] => struct order {
+ order order;
+}
+    [3] => struct orderResponse {
+ int orderResult;
+}
+    [4] => struct offer {
+ offer offer;
+}
+    [5] => struct offerResponse {
+ int offerResult;
+}
+    [6] => int char
+    [7] => duration duration
+    [8] => string guid
+)
