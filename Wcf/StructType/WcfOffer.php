@@ -27,7 +27,7 @@ class WcfOffer extends WcfOrder
      * Meta informations extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var order
+     * @var \Wcf\StructType\WcfOffer
      */
     public $offer;
     /**
@@ -35,9 +35,9 @@ class WcfOffer extends WcfOrder
      * @uses WcfOffer::setOfferClassMember()
      * @uses WcfOffer::setOffer()
      * @param string $offerClassMember
-     * @param order $offer
+     * @param \Wcf\StructType\WcfOffer $offer
      */
-    public function __construct($offerClassMember = null, order $offer = null)
+    public function __construct($offerClassMember = null, \Wcf\StructType\WcfOffer $offer = null)
     {
         $this
             ->setOfferClassMember($offerClassMember)
@@ -63,7 +63,7 @@ class WcfOffer extends WcfOrder
     }
     /**
      * Get offer value
-     * @return order|null
+     * @return \Wcf\StructType\WcfOffer|null
      */
     public function getOffer()
     {
@@ -71,10 +71,10 @@ class WcfOffer extends WcfOrder
     }
     /**
      * Set offer value
-     * @param order $offer
+     * @param \Wcf\StructType\WcfOffer $offer
      * @return \Wcf\StructType\WcfOffer
      */
-    public function setOffer(order $offer = null)
+    public function setOffer(\Wcf\StructType\WcfOffer $offer = null)
     {
         $this->offer = $offer;
         return $this;
